@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef HZ_PLATFORM_WINDOWS
+#ifdef TE_PLATFORM_WINDOWS
 
 extern TestEngine::Application* TestEngine::CreateApplication();
 
