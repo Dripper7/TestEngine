@@ -1,4 +1,7 @@
 #Directories
 .vs/
-bin/
-bin-int/
+
+bin-int/Debug-windows-x86_64/
+bin/Debug-windows-x86_64/
+bin/Release-windows-x86_64/
+bin-int/Release-windows-x86_64/
