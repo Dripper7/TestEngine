@@ -4,6 +4,9 @@
     <Filter Include="TestEngine">
       <UniqueIdentifier>{1BFF282A-07B7-6A77-70BE-43D35C950568}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TestEngine\Events">
+      <UniqueIdentifier>{9F3E9B76-0B55-990C-54CC-242EC0216A94}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\TestEngine.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\TestEngine\EntryPoint.h">
       <Filter>TestEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestEngine\Events\ApplicationEvent.h">
+      <Filter>TestEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestEngine\Events\Event.h">
+      <Filter>TestEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestEngine\Events\KeyEvent.h">
+      <Filter>TestEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestEngine\Events\MouseEvent.h">
+      <Filter>TestEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\TestEngine\Log.h">
       <Filter>TestEngine</Filter>

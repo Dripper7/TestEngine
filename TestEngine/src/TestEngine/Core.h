@@ -18,3 +18,5 @@ namespace TestEngine
 	__declspec(dllexport) void Print();
 
 }
+
+#define BIT(x) (1 << x)

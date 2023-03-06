@@ -26,6 +26,7 @@ project "TestEngine"
 	
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 	
@@ -47,15 +48,15 @@ project "TestEngine"
 		
 		
 	filter "configurations:Debug"
-		defines "TE_DEBUG"
+		defines "TE_DEBUG;TE_PLATFORM_WINDOWS;TE_BUILD_DLL;"
 		symbols "On"
 		
 	filter "configurations:Release"
-		defines "TE_RELEASE"
+		defines "TE_RELEASE;TE_PLATFORM_WINDOWS;TE_BUILD_DLL;"
 		optimize "On"
 		
 	filter "configurations:Dist"
-		defines "TE_DIST"
+		defines "TE_DIST;TE_PLATFORM_WINDOWS;TE_BUILD_DLL;"
 		optimize "On"
 	
 project "Sandbox"
@@ -95,15 +96,15 @@ project "Sandbox"
 		}
 		
 		filter "configurations:Debug"
-			defines "TE_DEBUG"
+			defines "TE_DEBUG;TE_PLATFORM_WINDOWS;"
 			symbols "On"
 		
 		filter "configurations:Release"
-			defines "TE_RELEASE"
+			defines "TE_RELEASE;TE_PLATFORM_WINDOWS;"
 			optimize "On"
 		
 		filter "configurations:Dist"
-			defines "TE_DIST"
+			defines "TE_DIST;TE_PLATFORM_WINDOWS;"
 		optimize "On"
 		
 		

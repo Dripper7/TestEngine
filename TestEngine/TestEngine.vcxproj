@@ -78,8 +78,8 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>TE_PLATFORM_WINDOWS;TE_BUILD_DLL;TE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TE_DEBUG;TE_PLATFORM_WINDOWS;TE_BUILD_DLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -99,8 +99,8 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>TE_PLATFORM_WINDOWS;TE_BUILD_DLL;TE_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TE_RELEASE;TE_PLATFORM_WINDOWS;TE_BUILD_DLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -124,8 +124,8 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>TE_PLATFORM_WINDOWS;TE_BUILD_DLL;TE_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TE_DIST;TE_PLATFORM_WINDOWS;TE_BUILD_DLL;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -150,6 +150,10 @@
     <ClInclude Include="src\TestEngine\Application.h" />
     <ClInclude Include="src\TestEngine\Core.h" />
     <ClInclude Include="src\TestEngine\EntryPoint.h" />
+    <ClInclude Include="src\TestEngine\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\TestEngine\Events\Event.h" />
+    <ClInclude Include="src\TestEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\TestEngine\Events\MouseEvent.h" />
     <ClInclude Include="src\TestEngine\Log.h" />
   </ItemGroup>
   <ItemGroup>
